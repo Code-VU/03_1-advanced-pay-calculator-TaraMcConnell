@@ -1,6 +1,13 @@
 def calculatePay():
     # This first line is provided for you
-    hours = input("Enter Hours:")
+    try:
+        Enter_hours: 20
+        Enter_rate: nine
+    except: NameError:
+    print("Error, please enter numeric input")
+
+
+    hours = input("Enter Hours: ")
     hours = float(hours)
 
     hourly_rate = input("Enter Rate: ")
@@ -13,14 +20,13 @@ def calculatePay():
 
         overtime_pay = overtime_hours * hourly_rate * 1.5
         normal_pay = normal_hours * hourly_rate
-        
-        gross_pay = normal_pay + overtime_pay
 
+        gross_pay = normal_pay + overtime_pay
     else:
         #the usual
         gross_pay = hours * hourly_rate
 
-        print(f"Pay: (gross_pay)")
+    print(f"Pay: {gross_pay}")
     
 
     # end assignment
