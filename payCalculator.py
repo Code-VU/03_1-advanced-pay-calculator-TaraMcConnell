@@ -2,9 +2,9 @@ def calculatePay():
     # This first line is provided for you
 
     hours = input("Enter hours: forty")
-    hours = float("hours")
+    hours = float(hours)
     hourly_rate = input("Enter rate: nine")
-    hourly_rate = float("hourly_rate")
+    hourly_rate = float(hourly_rate)
 
     if hours > 40: 
         #logic that reads overtime
