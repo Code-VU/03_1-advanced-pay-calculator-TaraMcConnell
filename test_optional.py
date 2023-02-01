@@ -8,7 +8,7 @@ def test_payCalculator_prints_error_withNonNumericHoursBonus(capfd, monkeypatch)
     try:
         payCalculator.calculatePay()
     except:
-        
+        pass
 
         out, err = capfd.readouterr()
     expected = 'Error, please enter numeric input\n'
